@@ -1,4 +1,9 @@
 <table>
     <th>Size</th>
     <th>Type</th>
+    <tr *ngFor="let table of tablesList">
+        <td>{{table.size}}</td>
+        <td>{{table.type}}</td>
+        <td></td>
+    </tr>
 </table>
