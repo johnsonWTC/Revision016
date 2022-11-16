@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { table } from '../table';
 
 @Component({
   selector: 'app-table-list',
@@ -9,7 +10,11 @@ export class TableListComponent implements OnInit {
 
   constructor() { }
 
+    @Input() tablesList : table [] = []
+
   ngOnInit(): void {
   }
+
+
 
 }
